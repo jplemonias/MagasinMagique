@@ -11,7 +11,7 @@ class Magasin {
     String face = "( . .)♥";
     String paw =  "c(\")(\")";
     // pour tester.
-    
+
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
 
