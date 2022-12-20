@@ -183,4 +183,40 @@ class MagasinTest {
         assertEquals(5, app.items[1].sellIn);
         assertEquals(50, app.items[1].quality);
     }
+
+    @Test
+    void MagicPower(){
+
+        Item[] items = new Item[]{
+                new Item("Pouvoirs magiques", 5, 10),
+                // new Item("Pouvoirs magiques", 0, 10)
+        };
+
+        Magasin app = new Magasin(items);
+
+        app.updateQuality();
+
+        assertEquals(4, app.items[0].sellIn);
+        assertEquals(8, app.items[0].quality);
+        // assertEquals(-1, app.items[1].sellIn);
+        // assertEquals(6, app.items[1].quality);
+    }
+
+    @Test
+    void MagicPower2(){
+
+        Item[] items = new Item[]{
+                // new Item("Pouvoirs magiques", 5, 10),
+                new Item("Pouvoirs magiques", -1, 10)
+        };
+
+        Magasin app = new Magasin(items);
+
+        app.updateQuality();
+
+        // assertEquals(4, app.items[0].sellIn);
+        // assertEquals(8, app.items[0].quality);
+        assertEquals(-2, app.items[0].sellIn);
+        assertEquals(6, app.items[0].quality);
+    }
 }
