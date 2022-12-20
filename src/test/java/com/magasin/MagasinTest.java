@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MagasinTest {
+
     @Test
     void vipQualityMore1or2or3() {
         Item[] items = new Item[] {
