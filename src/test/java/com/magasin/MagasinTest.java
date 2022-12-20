@@ -102,8 +102,6 @@ class MagasinTest {
         assertEquals(80, app.items[0].quality);
         assertEquals(0, app.items[0].sellIn);
     }
-
-
     @Test
     void testQualityAfterSellInPassing() {
         Item[] items = new Item[] {new Item("too", 1, 10),
