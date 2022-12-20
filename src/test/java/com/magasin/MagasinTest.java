@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MagasinTest {
-<<<<<<< HEAD
+
     @Test
     void vipQualityMore1or2or3() {
         Item[] items = new Item[] {
@@ -87,7 +87,7 @@ class MagasinTest {
     }
     @Test
     void kryptoniteNeverMoveTo80Quality() {
-        Item[] items = new Item[] {
+        Item[] items = new Item[]{
                 new Item("Kryptonite", 0, 80),
         };
         Magasin app = new Magasin(items);
@@ -101,7 +101,7 @@ class MagasinTest {
         }
         assertEquals(80, app.items[0].quality);
         assertEquals(0, app.items[0].sellIn);
-=======
+    }
 
 
     @Test
@@ -119,7 +119,7 @@ class MagasinTest {
         assertEquals(5, app.items[0].quality);
         assertEquals(-1, app.items[1].sellIn);
         assertEquals(20, app.items[1].quality);
->>>>>>> main
+
     }
 
     @Test
