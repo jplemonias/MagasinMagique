@@ -9,7 +9,7 @@ class MagasinTest {
 
     @Test
     void testQualityAfterSellInPassing() {
-        Item[] items = new Item[]{new Item("too", 1, 10),
+        Item[] items = new Item[] {new Item("too", 1, 10),
                 new Item("too2", 2, 24),
         };
 
