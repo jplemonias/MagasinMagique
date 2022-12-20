@@ -19,9 +19,9 @@ class Magasin {
                 if (items[i].quality < 50) {
 
                     if (items[i].name.equals("Comté")) {
-                        items[i].quality = items[i].quality + 1;
+                        items[i].quality ++;
                         if (items[i].sellIn < 1) {
-                            items[i].quality = items[i].quality + 1;
+                            items[i].quality ++;
                         }
                     }
 
@@ -31,7 +31,7 @@ class Magasin {
                         } else if (items[i].sellIn < 11) {
                             items[i].quality = items[i].quality + 2;
                         } else {
-                            items[i].quality = items[i].quality + 1;
+                            items[i].quality = items[i].quality ++;
                         }
                         if (items[i].quality > 50) {
                             items[i].quality = 50;
@@ -43,7 +43,7 @@ class Magasin {
 
                     else {
                         if (items[i].quality > 0) {
-                            items[i].quality = items[i].quality - 1;
+                            items[i].quality --;
                         }
                     }
                 }
