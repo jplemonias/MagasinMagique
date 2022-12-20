@@ -7,6 +7,10 @@ class Magasin {
         this.items = items;
     }
 
+    String ears = "(\\ /)";
+    String face = "( . .)♥";
+    String paw =  "c(\")(\")";
+
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
             if (!items[i].name.equals("Comté")
@@ -32,6 +36,13 @@ class Magasin {
                                 items[i].quality = items[i].quality + 1;
                             }
                         }
+                        // if (items[i].quality < 50) {
+                        //     if (items[i].sellIn < 6) {
+                        //         items[i].quality = items[i].quality + 2;
+                        //     } else if (items[i].sellIn < 11) {
+                        //         items[i].quality = items[i].quality + 1;
+                        //     }
+                        // }
                     }
                 }
             }
